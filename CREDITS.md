@@ -1,7 +1,7 @@
 # Credits
 
-## Placeholder product imagery
+## AR development asset
 
-- **Pizza photo** — Unsplash placeholder product image. Source: https://unsplash.com/photos/1513104890138-7c749659a591
+- **Pizza** — Quaternius via Poly Pizza, CC0 1.0 Universal. Bundled as `dist/assets/pizza.glb` and used for the interactive and AR experiences. Source: https://poly.pizza/m/XmmG0uImLL
 
-Before production, replace this asset with the product-specific photography and licensed 3D PBR models supplied by each merchant.
+Before production, replace this asset with the product-specific photography, GLB and USDZ PBR models supplied by each merchant.
