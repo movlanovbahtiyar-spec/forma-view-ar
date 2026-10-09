@@ -1,7 +1,7 @@
 # Credits
 
-## 3D development asset
+## Placeholder product imagery
 
-- **Damaged Helmet** — KhronosGroup glTF Sample Assets, licensed under CC BY 4.0. Used only as an open development placeholder in the interactive model previews. Source: https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/DamagedHelmet
+- **Pizza photo** — Unsplash placeholder product image. Source: https://unsplash.com/photos/1513104890138-7c749659a591
 
-Before production, replace this asset with the product-specific, licensed PBR models supplied by each merchant.
+Before production, replace this asset with the product-specific photography and licensed 3D PBR models supplied by each merchant.
