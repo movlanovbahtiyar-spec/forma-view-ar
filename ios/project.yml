@@ -1,0 +1,22 @@
+name: FormaScanner
+options:
+  minimumXcodeGenVersion: 2.38.0
+settings:
+  base:
+    SWIFT_VERSION: 6.0
+    IPHONEOS_DEPLOYMENT_TARGET: 18.0
+targets:
+  FormaScanner:
+    type: application
+    platform: iOS
+    sources:
+      - path: FormaScanner
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.formaview.scanner
+        PRODUCT_NAME: Forma Scanner
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Forma Scanner
+        INFOPLIST_KEY_NSCameraUsageDescription: "Forma View, ürünleri gerçek ölçekte taramak için kameranızı kullanır."
+        TARGETED_DEVICE_FAMILY: 1
+        SUPPORTS_MACCATALYST: NO
