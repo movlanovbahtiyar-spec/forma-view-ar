@@ -12,22 +12,35 @@ paths:
           application/json:
             schema:
               type: object
-              required: [captureId, unit, scaleSource, upload]
+              required: [manifest, assets]
               properties:
-                captureId: { type: string, format: uuid }
-                unit: { type: string, enum: [meter] }
-                scaleSource: { type: string, enum: [lidar, referenceCard, operatorVerified] }
-                confidence: { type: number, minimum: 0, maximum: 1 }
-                dimensionsMeters:
+                manifest:
                   type: object
+                  required: [captureID, unit, scaleSource, confidence]
                   properties:
-                    width: { type: number, exclusiveMinimum: 0 }
-                    height: { type: number, exclusiveMinimum: 0 }
-                    depth: { type: number, exclusiveMinimum: 0 }
-                upload:
-                  type: object
-                  required: [archiveUrl]
-                  properties: { archiveUrl: { type: string, format: uri } }
+                    captureID: { type: string, format: uuid }
+                    unit: { type: string, enum: [meter] }
+                    scaleSource: { type: string, enum: [lidar, referenceCard, operatorVerified] }
+                    confidence: { type: number, minimum: 0, maximum: 1 }
+                assets:
+                  type: array
+                  items:
+                    type: object
+                    required: [relativePath, contentType, byteCount]
+                    properties:
+                      relativePath: { type: string }
+                      contentType: { type: string }
+                      byteCount: { type: integer, minimum: 1 }
+      responses:
+        '201': { description: Scan ID and signed PUT upload targets }
+  /v1/scans/{captureId}/complete:
+    post:
+      summary: Mark every signed upload as complete and queue reconstruction
+      parameters:
+        - in: path
+          name: captureId
+          required: true
+          schema: { type: string, format: uuid }
       responses:
         '202': { description: Accepted; reconstruction queued }
   /v1/scans/{captureId}:

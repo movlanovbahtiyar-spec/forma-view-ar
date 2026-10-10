@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B77472BA47FB45EEB02E0B1 /* ScanUploadCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947094F2F7ACABB6E2F82375 /* ScanUploadCoordinator.swift */; };
+		87316982114FE8B1B8B08357 /* ScanAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0950F27457EF02059368AD6 /* ScanAPI.swift */; };
+		97F5A950F80A05B3D1173D75 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993AB14F2A25D6EC4A7DF353 /* AppConfiguration.swift */; };
 		B8D53842A18B0CA7DE186F34 /* ScannerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA7245F38275D125B6FE53 /* ScannerHomeView.swift */; };
 		C7952030AF92F9D3DE6B7435 /* ScaleManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43053059D04B65F408628B76 /* ScaleManifest.swift */; };
 		C8C7D9BE312856CB0D4424F5 /* FormaScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B1F40CFEFC80BE4447B69C /* FormaScannerApp.swift */; };
@@ -16,6 +19,9 @@
 		43053059D04B65F408628B76 /* ScaleManifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleManifest.swift; sourceTree = "<group>"; };
 		4FCA7245F38275D125B6FE53 /* ScannerHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerHomeView.swift; sourceTree = "<group>"; };
 		59B1F40CFEFC80BE4447B69C /* FormaScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormaScannerApp.swift; sourceTree = "<group>"; };
+		947094F2F7ACABB6E2F82375 /* ScanUploadCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanUploadCoordinator.swift; sourceTree = "<group>"; };
+		993AB14F2A25D6EC4A7DF353 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		C0950F27457EF02059368AD6 /* ScanAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanAPI.swift; sourceTree = "<group>"; };
 		EA5530B0981DDF2C3CA3EAF9 /* FormaScanner.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FormaScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -23,9 +29,12 @@
 		0A0D5264C5A9F8CC28C3BA2B /* FormaScanner */ = {
 			isa = PBXGroup;
 			children = (
+				993AB14F2A25D6EC4A7DF353 /* AppConfiguration.swift */,
 				59B1F40CFEFC80BE4447B69C /* FormaScannerApp.swift */,
 				43053059D04B65F408628B76 /* ScaleManifest.swift */,
+				C0950F27457EF02059368AD6 /* ScanAPI.swift */,
 				4FCA7245F38275D125B6FE53 /* ScannerHomeView.swift */,
+				947094F2F7ACABB6E2F82375 /* ScanUploadCoordinator.swift */,
 			);
 			path = FormaScanner;
 			sourceTree = "<group>";
@@ -101,8 +110,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97F5A950F80A05B3D1173D75 /* AppConfiguration.swift in Sources */,
 				C8C7D9BE312856CB0D4424F5 /* FormaScannerApp.swift in Sources */,
 				C7952030AF92F9D3DE6B7435 /* ScaleManifest.swift in Sources */,
+				87316982114FE8B1B8B08357 /* ScanAPI.swift in Sources */,
+				7B77472BA47FB45EEB02E0B1 /* ScanUploadCoordinator.swift in Sources */,
 				B8D53842A18B0CA7DE186F34 /* ScannerHomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

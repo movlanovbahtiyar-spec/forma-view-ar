@@ -13,11 +13,14 @@ reference-card route, not an invented scale.
 
 ## Production handoff
 
-After `ObjectCaptureSession` reaches `completed`, archive its images and submit
-them with a `ScaleManifest` to `POST /v1/scans`. Reconstruction is a background
-job. The worker must preserve metre units in the generated GLB and USDZ, validate
-the resulting bounding box against `dimensionsMeters`, and reject jobs beyond
-the configured tolerance before publishing.
+After `ObjectCaptureSession` reaches `completed`, the app inventories the
+capture files, creates a scan job, uploads each file using server-issued signed
+URLs, and calls `POST /v1/scans/{captureId}/complete`. The bearer token and API
+base URL are entered in the app’s Connection settings; the token is stored in
+the device Keychain and is never committed to source control. Reconstruction is
+a background job. The worker must preserve metre units in the generated GLB and
+USDZ, validate the resulting bounding box against `dimensionsMeters`, and reject
+jobs beyond the configured tolerance before publishing.
 
 This module must be tested on a physical device; the Simulator does not support
 ARKit/Object Capture.
